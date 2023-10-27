@@ -42,8 +42,8 @@ const About = () => {
           <RiDoubleQuotesL className="text-5xl text-[#4310fd94]" />
 
           <span className="text-4xl font-semibold text-center max-w-2xl max-sm:text-3xl">
-            "Where thoughts take shape, words find meaning, and stories come
-            alive."
+            &ldquo;Where thoughts take shape, words find meaning, and stories
+            come alive.&quot;
           </span>
           <span className="font-spaceGrotesk text-2xl font-bold italic">
             InfinitY
@@ -64,7 +64,8 @@ const About = () => {
           </h2>
           <p className="text-3xl font-light">
             Join us on this journey as we embrace the power of the written word,
-            and let's contribute to a world where meaningful content triumphs.
+            and let&apos;s contribute to a world where meaningful content
+            triumphs.
           </p>
           <Link
             href="/blog"
