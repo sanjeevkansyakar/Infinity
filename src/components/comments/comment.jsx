@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+// Comment component
 const Comment = ({ comment }) => {
   return (
     <div className="px-3 py-2 rounded-md border flex justify-between">
