@@ -10,14 +10,14 @@ import Input from "@/components/Input";
 import TipTapEditor from "@/components/editor/TipTapEditor";
 
 const DashboardContent = ({ blog }) => {
-  // const { edgestore } = useEdgeStore();
-  // const [isUploading, setIsUploading] = useState(false);
+  const { edgestore } = useEdgeStore();
+  const [isUploading, setIsUploading] = useState(false);
   // Required data for Submission
   const [title, setTitle] = useState(blog?.title || "");
   // File uploaded by user
-  // const [file, setFile] = useState('');
+  const [file, setFile] = useState("");
   // To show progressbar
-  // const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(0);
   // For Image
   const [imageUrl, setImageUrl] = useState(blog?.imageUrl || "");
 
