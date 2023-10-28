@@ -11,7 +11,7 @@ import TipTapEditor from "@/components/editor/TipTapEditor";
 
 const DashboardContent = ({ blog }) => {
   const { edgestore } = useEdgeStore();
-  const [isUploading, setIsUploading] = useState(false);
+  // const [isUploading, setIsUploading] = useState(false);
   // Required data for Submission
   const [title, setTitle] = useState(blog?.title || "");
   // File uploaded by user
@@ -74,7 +74,7 @@ const DashboardContent = ({ blog }) => {
             )}
           </div>
 
-          <div className="flex justify-center items-center">
+          {/* <div className="flex justify-center items-center">
             <button
               disabled={isUploading}
               className=" focus-visible:ring-ring ring-1 ring-white transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 px-4 py-1.5 bg-black/90 text-white text-semibold rounded-xl hover:bg-black/70"
@@ -82,7 +82,7 @@ const DashboardContent = ({ blog }) => {
             >
               {isUploading ? "Uploading.." : "Upload"}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="flex md:w-2/3">
