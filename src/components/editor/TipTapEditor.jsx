@@ -22,6 +22,7 @@ const TipTapEditor = ({
   setProgress,
   content,
   blogId,
+  setSelectedImage,
 }) => {
   const { data } = useSession();
   const email = data?.user?.email;
@@ -94,6 +95,7 @@ const TipTapEditor = ({
       setTitle("");
       setFile("");
       setProgress(0);
+      setSelectedImage(null);
       editor?.commands.clearContent(true);
     } else {
       toast.error(response.data.message);
