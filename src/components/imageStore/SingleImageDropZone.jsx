@@ -16,16 +16,6 @@ const variants = {
   reject: "border border-red-700 bg-red-700 bg-opacity-10",
 };
 
-// type InputProps = {
-//   width: number;
-//   height: number;
-//   className?: string;
-//   value?: File | string;
-//   onChange?: (file?: File) => void | Promise<void>;
-//   disabled?: boolean;
-//   dropzoneOptions?: Omit<DropzoneOptions, 'disabled'>;
-// };
-
 const ERROR_MESSAGES = {
   fileTooLarge(maxSize) {
     return `The file is too large. Max size is ${formatFileSize(maxSize)}.`;

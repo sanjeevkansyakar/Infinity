@@ -59,7 +59,7 @@ const DashboardContent = ({ blog }) => {
             onChange={(file) => {
               setFile(file);
             }}
-          />
+          /> */}
           <div className="flex gap-2 justify-center items-center w-full py-1">
             <div className="h-[6px] w-3/4 rounded overflow-hidden">
               <div
@@ -72,9 +72,9 @@ const DashboardContent = ({ blog }) => {
             {progress != 0 && (
               <span className="text-black text-sm">{progress}%</span>
             )}
-          </div> */}
+          </div>
 
-          {/* <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center">
             <button
               disabled={isUploading}
               className=" focus-visible:ring-ring ring-1 ring-white transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 px-4 py-1.5 bg-black/90 text-white text-semibold rounded-xl hover:bg-black/70"
@@ -82,7 +82,7 @@ const DashboardContent = ({ blog }) => {
             >
               {isUploading ? "Uploading.." : "Upload"}
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="flex md:w-2/3">
@@ -93,8 +93,8 @@ const DashboardContent = ({ blog }) => {
             setTitle={setTitle}
             imageUrl={imageUrl}
             setImageUrl={setImageUrl}
-            // setProgress={setProgress}
-            // setFile={setFile}
+            setProgress={setProgress}
+            setFile={setFile}
             content={blog?.content}
             blogId={blog?._id}
           />
