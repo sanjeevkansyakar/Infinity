@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Input from "@/components/Input";
 import TipTapEditor from "@/components/editor/TipTapEditor";
 
-const DashboardContent = ({ blog = null }) => {
+const DashboardContent = ({ blog }) => {
   const { edgestore } = useEdgeStore();
   const [isUploading, setIsUploading] = useState(false);
   // Required data for Submission
@@ -38,7 +38,7 @@ const DashboardContent = ({ blog = null }) => {
 
   return (
     <div className="w-full flex max-md:flex-col gap-5 max-md:px-3">
-      <Toaster />
+      {/* <Toaster /> */}
 
       <div className="md:w-1/3 flex flex-col gap-5">
         <div className="h-fit md:backdrop-blur-lg bg-white/40 shadow-lg shadow-slate-300 rounded-lg p-2">
@@ -87,7 +87,8 @@ const DashboardContent = ({ blog = null }) => {
       </div>
       <div className="flex md:w-2/3">
         <div className="flex w-full h-fit md:backdrop-blur-lg bg-white/40 shadow-lg shadow-slate-300 rounded-lg p-2">
-          <TipTapEditor
+          hello
+          {/* <TipTapEditor
             title={title}
             setTitle={setTitle}
             imageUrl={imageUrl}
@@ -96,7 +97,7 @@ const DashboardContent = ({ blog = null }) => {
             setFile={setFile}
             content={blog?.content}
             blogId={blog?._id}
-          />
+          /> */}
         </div>
       </div>
     </div>
