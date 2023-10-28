@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Input from "@/components/Input";
 import TipTapEditor from "@/components/editor/TipTapEditor";
 
-const DashboardContent = ({ blog }) => {
+const DashboardContent = ({ blog = null }) => {
   const { edgestore } = useEdgeStore();
   const [isUploading, setIsUploading] = useState(false);
   // Required data for Submission
