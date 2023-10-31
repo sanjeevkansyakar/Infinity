@@ -1,7 +1,5 @@
 "use client";
-
 import Input from "@/components/Input";
-
 import { ImGoogle } from "react-icons/im";
 import { BsGithub } from "react-icons/bs";
 import { useState } from "react";
@@ -12,7 +10,6 @@ import { ImSpinner } from "react-icons/im";
 const Login = () => {
   const { data } = useSession();
   const router = useRouter();
-
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -55,7 +52,7 @@ const Login = () => {
         <img src="/assets/logo_icon.png" alt="logo" className="h-full w-full" />
         <span className="text-4xl font-[futura]">Infinity</span>
       </div>
-      <div className="border-2 border-black rounded-lg w-fit h-fit p-6 flex flex-col gap-3 ">
+      <div className="border-2 border-black rounded-lg w-fit h-fit p-6 flex flex-col gap-3 custom-shadow">
         {error && (
           <h2 className="text-md text-red-500 text-center break-words">
             {error}

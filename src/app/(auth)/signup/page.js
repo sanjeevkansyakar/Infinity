@@ -10,9 +10,8 @@ import { useRouter } from "next/navigation";
 
 const Signup = () => {
   const router = useRouter();
-  const { data } = useSession();
-
   const [err, setErr] = useState("");
+  const { data } = useSession();
   const [isLoading, setIsLoading] = useState(false);
 
   // On Submit
@@ -60,7 +59,7 @@ const Signup = () => {
         <img src="/assets/logo_icon.png" alt="logo" className="h-full w-full" />
         <span className="text-4xl font-[futura]">Infinity</span>
       </div>
-      <div className="border-2 border-black rounded-lg w-fit h-fit p-6 flex flex-col gap-2">
+      <div className="border-2 border-black rounded-lg w-fit h-fit p-6 flex flex-col gap-2 custom-shadow">
         {err && <p className="text-red-500 font-light">{err}</p>}
         <form onSubmit={signUpUsingCredential} className="flex flex-col gap-3">
           <Input label="Enter your name" required placeholder="Jhon doe" />
