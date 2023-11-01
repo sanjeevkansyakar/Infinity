@@ -1,11 +1,9 @@
 # Infinity Blog Application
 
-![Tech Blog](https://infinity-sanjeev2514.vercel.app/)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Screenshots](#screenshots)
+- [Preview](#preview)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
@@ -18,7 +16,7 @@
 
 Welcome to the Infinity Blog Application, a real-time interactive web platform dedicated to tech enthusiasts and programmers. This application allows users to explore, write, and share blogs on topics related to the tech space and programming. It's designed to provide a seamless CRUD (Create, Read, Update, Delete) experience for tech bloggers. And write blog using auto-completion feature and user can comment and share their throught with people.
 
-## Screenshots
+## Preview
 
 ![Editor Demo](public/Infini.gif)
 
